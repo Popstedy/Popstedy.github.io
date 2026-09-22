@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>opsblueprint — Popstedy</title>
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --fg: #e0e0e0;
+    --accent: #00ff41;
+    --muted: #666;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Source Code Pro', monospace;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+    font-size: 14px;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 2em; }
+  header { border-bottom: 1px solid #333; padding-bottom: 1em; margin-bottom: 2em; }
+  header h1 { color: var(--accent); font-size: 1.8em; letter-spacing: -0.02em; }
+  header .tagline { color: var(--muted); margin-top: 0.3em; }
+  nav { margin: 2em 0; }
+  nav a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 1em;
+    font-size: 0.9em;
+    border: 1px solid transparent;
+    padding: 0.3em 0.6em;
+    transition: border-color 0.2s;
+  }
+  nav a:hover { border-color: var(--accent); }
+  .post-preview {
+    background: #111;
+    border: 1px solid #333;
+    border-left: 3px solid var(--accent);
+    padding: 1.5em;
+    margin: 1em 0;
+  }
+  .post-preview h2 { color: var(--accent); font-size: 1.2em; margin-bottom: 0.5em; }
+  .post-preview .meta { color: var(--muted); font-size: 0.85em; margin-bottom: 0.8em; }
+  .post-preview p { margin-bottom: 0.6em; }
+  .read-more {
+    display: inline-block;
+    color: var(--accent);
+    text-decoration: none;
+    margin-top: 0.8em;
+    font-size: 0.9em;
+  }
+  .read-more:hover { text-decoration: underline; }
+  footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #333; color: var(--muted); font-size: 0.85em; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>opsblueprint</h1>
+    <div class="tagline">Blog · Portfolio · Landing — Popstedy</div>
+  </header>
+
+  <nav>
+    <a href="#blog">Blog</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="blog/post.html">Pročitaj post</a>
+  </nav>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="post-preview">
+      <h2>Kako podesiti Ollama + OpenClaw za lokalni AI coding</h2>
+      <div class="meta">DIY AI Setup · 2026-09-19 · 8 min</div>
+      <p>Kombinacija Ollama + OpenClaw za lokalni AI coding bez mesečnih API troškova i bez slanja koda u cloud. Instalacija, konfiguracija i povezivanje lokalnih modela sa AI agentima.</p>
+      <a class="read-more" href="blog/post.html">Pročitaj →</a>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p style="color: var(--muted);">U gradnji — predstavlja projekte i case studije.</p>
+  </section>
+
+  <footer>
+    <p><a href="https://github.com/Popstedy">github.com/Popstedy</a> · <a href="https://anddidyouknow.blogspot.com">anddidyouknow.blogspot.com</a></p>
+  </footer>
+</div>
+</body>
+</html>
